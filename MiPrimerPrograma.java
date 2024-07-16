@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MiPrimerPrograma {
     public static void main(String[] args) {
         System.out.println("Hola Mundo!");
@@ -94,5 +96,14 @@ public class MiPrimerPrograma {
         + " Podría ser un e-commerce dirigido a toda la población de lima"
         + " que son aproximadamente " + habitantesLima + " de habitantes."
         );
+
+        Scanner pepe = new Scanner(System.in);
+        System.out.print("Por favor ingrese una edad: ");
+        edad = pepe.nextInt();
+        pepe.nextLine();
+        System.out.print("Por favor ingrese un nombre: ");
+        nombreCompleto = pepe.nextLine();
+        System.out.println("Hola soy "+nombreCompleto+" y mi edad es: "+edad+" años.");
+
     }
 }
